@@ -22,7 +22,7 @@ for (let i = 0; i < numberOfStatuses; i++) {
   const taskColumnComponent = new TaskColumnComponent();
   render(taskColumnComponent, taskBoardContainer);
 
-  const tasksList = document.querySelectorAll(`.task-list`);
+  const tasksList = document.querySelectorAll(".task-list");
 
   for (let j = 0; j < numberOfTasks; j++) {
     render(new TaskComponent(), tasksList[i]);
