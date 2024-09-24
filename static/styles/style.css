@@ -1,0 +1,31 @@
+/* Обнуление оступов */
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+.task_body{
+    background-color: rgb(69, 77, 105);
+}
+#main{
+    
+    padding: 25px;
+}
+/* Заголовок */
+.header h1{
+    padding-left: 50px;
+    padding-bottom: 75px;
+    font-size: 4em;
+    color: rgb(248, 238, 225);
+    background-color: rgb(218, 140, 112);
+}
+/* Заливка поля */
+
+.container{
+ 
+    padding-bottom: 500px;
+    margin: 100px;
+}
+a{
+    text-decoration: none;
+}

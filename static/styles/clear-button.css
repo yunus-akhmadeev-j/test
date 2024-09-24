@@ -1,0 +1,29 @@
+.clear-button{
+    
+    
+    border-radius: 5px 5px 5px 5px;
+    padding: 10px;
+    text-align: right;
+    margin-right: 120px;
+   
+    
+    
+    
+}
+/* через свойство контент создаем знак Х */
+p.clear-button-text:before
+{
+    content: '\2716';
+}
+/* Свойства самой кнопки */
+.button-clear{
+    
+   width: 280px;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(207, 149, 110);
+    color: white;
+    border-style: hidden;
+    border-radius: 10px 10px 10px 10px;
+    
+}
