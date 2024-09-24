@@ -3,16 +3,20 @@ import FormAddTaskComponent from "./view/task-adder.js";
 
 import TaskComponent from "./view/task-component.js";
 import { render, RenderPosition } from "./framework/render.js";
+import TaskBasket from "./view/task-basket.js";
 
 const numberOfStatuses = 4;
 const numberOfTasks = 4;
 
 const bodyContainer = document.querySelector("body");
 const formContainer = document.querySelector(".newtask-add-button");
+const basketContainer = document.querySelector(".task-basket");
+
 const taskBoardContainer = document.querySelector(".task-body");
 
 render(new HeaderComponent(), bodyContainer, RenderPosition.AFTERBEGIN);
 render(new FormAddTaskComponent(), formContainer);
+render(new TaskBasket(), basketContainer );
 
 for (let i = 0; i < numberOfStatuses; i++) {
   const taskColumnComponent = new TaskColumnComponent();
